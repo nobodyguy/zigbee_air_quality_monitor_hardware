@@ -1,0 +1,43 @@
+name: "KiCad CI/CD for Zigbee AirQuality Monitor board"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    paths:
+      - '*.kicad_sch'
+      - '*.kicad_pcb'
+      - '*.kicad_pro'
+      - '*.kibot.yaml'
+      - '.github/workflows/zigbee.yml'
+      - './configs/*.kibot.yaml'
+  pull_request:
+    paths:
+      - '*.kicad_sch'
+      - '*.kicad_pcb'
+      - '*.kicad_pro'
+      - '*.kibot.yaml'
+      - '.github/workflows/zigbee.yml'
+      - './configs/*.kibot.yaml'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  fabrication:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    # This is a KiCad 5 example, KiCad 6 uses v2_k6
+    - uses: INTI-CMNB/KiBot@v2_k7
+      with:
+        # Required - kibot config file
+        config: ./configs/zigbee.kibot.yaml
+        # optional - prefix to output defined in config
+        dir: fabrication
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: fabrication
+        path: |
+          fabrication
+        if-no-files-found: warn
