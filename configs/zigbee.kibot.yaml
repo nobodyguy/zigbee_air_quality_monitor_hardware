@@ -47,18 +47,9 @@ preflight:
 
 outputs:
   - name: 'diff_pcb'
-    comment: "Diff of PCB changes against current HEAD"
+    comment: "Diff of schematic and PCB changes against current HEAD"
     type: diff
     dir: Diff
-    options:
-      pcb: true
-
-  - name: 'diff_sch'
-    comment: "Diff of schematic changes against current HEAD"
-    type: diff
-    dir: Diff
-    options:
-      pcb: false
 
   - name: 'bom_xlsx'
     comment: "Spreadsheet for the Bill of Materials"
@@ -142,7 +133,7 @@ outputs:
   - name: print_pdf
     comment: "PDF for the PCB"
     type: pcb_print
-    dir: PCB
+    dir: .
     options:
       force_edge_cuts: true
       keep_temporal_files: true
@@ -181,6 +172,7 @@ outputs:
     dir: 3D
     options:
       zoom: 2
+      solder_mask: '#008000'
       ray_tracing: true
 
   - name: 3D_render_HQ
@@ -200,7 +192,7 @@ outputs:
         - type: render
       light:
         # [number=0] How powerful is the light. Using 0 for POINT and SUN KiBot will try to use something useful
-        - energy: 5
+        - energy: 4
           # [string=''] Name for the light
           name: 'Global Light'
           # [number|string] X position [m]. You can use `width`, `height` and `size` for PCB dimensions

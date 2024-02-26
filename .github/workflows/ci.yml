@@ -9,16 +9,16 @@ on:
       - '*.kicad_pcb'
       - '*.kicad_pro'
       - '*.kibot.yaml'
-      - '.github/workflows/zigbee.yml'
-      - './configs/*.kibot.yaml'
+      - '.github/workflows/*.yml'
+      - 'configs/*.yaml'
   pull_request:
     paths:
       - '*.kicad_sch'
       - '*.kicad_pcb'
       - '*.kicad_pro'
       - '*.kibot.yaml'
-      - '.github/workflows/zigbee.yml'
-      - './configs/*.kibot.yaml'
+      - '.github/workflows/*.yml'
+      - 'configs/*.yaml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    # This is a KiCad 5 example, KiCad 6 uses v2_k6
+    # This is a KiCad 7 example, KiCad 6 uses v2_k6
     - uses: INTI-CMNB/KiBot@v2_k7
       with:
         # Required - kibot config file
