@@ -136,10 +136,9 @@ outputs:
     dir: .
     options:
       force_edge_cuts: true
-      keep_temporal_files: true
       # This is the worksheet we selected in the project, no need to specify it again
       # sheet_reference_layout: pcb_print.kicad_wks
-      scaling: 2.0
+      scaling: 0
       pages:
         - layers: [ F.Paste, F.Fab ]
           sheet: 'Fabrication layers'
