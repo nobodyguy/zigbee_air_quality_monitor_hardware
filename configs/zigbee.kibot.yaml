@@ -47,9 +47,18 @@ preflight:
 
 outputs:
   - name: 'diff_pcb'
-    comment: "Diff of schematic and PCB changes against current HEAD"
+    comment: "Diff of PCB changes against current HEAD"
     type: diff
     dir: Diff
+    options:
+      pcb: true
+
+  - name: 'diff_sch'
+    comment: "Diff of schematic changes against current HEAD"
+    type: diff
+    dir: Diff
+    options:
+      pcb: false
 
   - name: 'bom_xlsx'
     comment: "Spreadsheet for the Bill of Materials"
@@ -138,7 +147,7 @@ outputs:
       force_edge_cuts: true
       # This is the worksheet we selected in the project, no need to specify it again
       # sheet_reference_layout: pcb_print.kicad_wks
-      scaling: 0
+      scaling: 3
       pages:
         - layers: [ F.Paste, F.Fab ]
           sheet: 'Fabrication layers'
