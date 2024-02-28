@@ -5,6 +5,13 @@
   )
 
   (paper "A4")
+  (title_block
+    (title "Zigbee air quality monitor")
+    (date "2024-02-28")
+    (rev "1.0")
+    (company "Jan Gnip")
+  )
+
   (layers
     (0 "F.Cu" signal "Front")
     (1 "In1.Cu" power)
@@ -3759,8 +3766,22 @@
     (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (tstamp 04e45098-a5de-4af6-b18c-adfd5104da80))
   (gr_rect (start 135.65 104.75) (end 136.1 105.75)
     (stroke (width 0.15) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 961b1465-e241-4a80-9304-063580fecd00))
-  (gr_rect (start 122.1 89.2) (end 141.85 140.1)
-    (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp f474acf1-98f4-4f2d-9871-d4fc92dcf417))
+  (gr_line (start 122.1 138.1) (end 122.1 91.2)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 0e0cd152-744b-4425-a076-06e77f5703b3))
+  (gr_line (start 141.85 138.1) (end 141.85 91.2)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 319edacc-47c1-45bf-8f90-c2aa3a39d3c5))
+  (gr_arc (start 139.85 89.2) (mid 141.264214 89.785786) (end 141.85 91.2)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 324b5bc8-e714-4a17-8fd2-fb36f8ccde86))
+  (gr_arc (start 122.1 91.2) (mid 122.685786 89.785786) (end 124.1 89.2)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 94720ab2-d6ad-45bd-bf4d-d8e270346460))
+  (gr_line (start 124.1 89.2) (end 139.85 89.2)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 94a37a6a-6c8e-45b8-88d8-34a89d38d8ec))
+  (gr_line (start 124.1 140.1) (end 139.85 140.1)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp ed2a47e2-7d7c-42a4-89bb-ee76e07c1aa3))
+  (gr_arc (start 124.1 140.1) (mid 122.685786 139.514214) (end 122.1 138.1)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f0c7da4a-60c1-455c-80d3-a77ec8c86d01))
+  (gr_arc (start 141.85 138.1) (mid 141.264214 139.514214) (end 139.85 140.1)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f1b4f37d-6cbc-4f9d-97ec-83860fb41dc9))
 
   (segment (start 138.6 98) (end 139.245 98) (width 0.245) (layer "F.Cu") (net 1) (tstamp 260810b5-9d8d-40a2-bd0a-5bd0d1a4ffd3))
   (segment (start 139.6725 97.5725) (end 139.6725 97.0025) (width 0.245) (layer "F.Cu") (net 1) (tstamp 2bae51d3-65fb-47e3-b857-64983c890186))
