@@ -7,3 +7,5 @@ Opensource HA compatible air quality monitor with CO2, temperature and humidity 
 
 ## Firmware
 https://github.com/nobodyguy/zigbee_air_quality_monitor_firmware
+
+![PCB render](pcb_animation.gif)
