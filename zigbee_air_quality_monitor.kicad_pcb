@@ -715,7 +715,7 @@
     )
   )
 
-  (footprint "zigbee_air_quality_monitor:XDCR_SCD41-D-R2" (layer "F.Cu")
+  (footprint "zigbee_air_quality_monitor:XDCR_SCD40-D-R2" (layer "F.Cu")
     (tstamp 36f3a2e4-ae73-4bd7-9da9-8cb53cdde7b9)
     (at 131.625 117.475 180)
     (property "MANUFACTURER" "Sensirion")
