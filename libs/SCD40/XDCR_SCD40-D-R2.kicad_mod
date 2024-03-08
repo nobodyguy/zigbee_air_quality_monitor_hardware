@@ -1,11 +1,11 @@
 
-(footprint XDCR_SCD41-D-R2 (layer F.Cu) (tedit 63CAF380)
+(footprint XDCR_SCD40-D-R2 (layer F.Cu) (tedit 63CAF380)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at -2.125 -6.935 0) (layer F.SilkS)
     (effects (font (size 1.0 1.0) (thickness 0.15)))
   )
-  (fp_text value XDCR_SCD41-D-R2 (at 4.225 6.935 0) (layer F.Fab)
+  (fp_text value XDCR_SCD40-D-R2 (at 4.225 6.935 0) (layer F.Fab)
     (effects (font (size 1.0 1.0) (thickness 0.15)))
   )
   (pad 1 smd custom (at -4.0 -2.5) (size 0.5 0.5) (layers F.Cu)
