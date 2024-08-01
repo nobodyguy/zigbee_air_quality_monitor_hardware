@@ -27,7 +27,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     # This is a KiCad 7 example, KiCad 6 uses v2_k6
-    - uses: INTI-CMNB/KiBot@v2_k7
+    - uses: INTI-CMNB/KiBot@v2_k8
       with:
         # Required - kibot config file
         config: ./configs/zigbee.kibot.yaml

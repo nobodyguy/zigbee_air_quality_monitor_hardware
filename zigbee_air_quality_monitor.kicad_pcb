@@ -1349,7 +1349,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C160404"
+		(property "LCSC Part" "C9900058894"
 			(at 20.25 229.9 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4773,6 +4773,19 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C965804"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52cfbe53-ef02-4af6-8642-9d19bf726eee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/ad464ceb-b3ce-40d1-bb74-49bfbf1423f5")
 		(sheetname "Root")
@@ -5225,6 +5238,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "C965807"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f4c7bf7-7b7f-4e1c-bba3-44e2964f6d64")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8362,6 +8388,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7f29f97d-3741-47fd-8b55-a8d7e8a02b80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "C5182373"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63bc97b0-e962-4c35-93bb-f7f493fe5875")
 			(effects
 				(font
 					(size 1 1)
